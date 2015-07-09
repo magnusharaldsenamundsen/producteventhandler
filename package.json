@@ -1,0 +1,32 @@
+{
+  "name": "producteventhandler",
+  "version": "0.0.0",
+  "description": "An event handler for product events",
+  "homepage": "",
+  "repository": "magnusharaldsenamundsen/producteventhandler",
+  "author": {
+    "name": "Magnus Haraldsen Amundsen",
+    "email": "magnus.amundsen@gmail.com",
+    "url": ""
+  },
+  "files": [
+    "lib"
+  ],
+  "main": "./lib/index.js",
+  "keywords": [],
+  "devDependencies": {
+    "gulp": "^3.6.0",
+    "gulp-istanbul": "^0.8.1",
+    "gulp-jscs": "^1.1.0",
+    "gulp-jshint": "^1.5.3",
+    "gulp-mocha": "^2.0.0",
+    "gulp-plumber": "^1.0.0",
+    "jshint-stylish": "^1.0.0",
+    "gulp-babel": "^5.1.0",
+    "babel-core": "^5.5.0"
+  },
+  "scripts": {
+    "test": "gulp"
+  },
+  "private": true
+}
