@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Productevent prototype</title>
+		<link href="/css/styles.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="events"></div>
+		<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="https://cdn.socket.io/socket.io-1.3.5.js"></script>
+		<script>
+			'use strict';
+
+			$(function(){
+			  var socket = io.connect();
+
+			  socket.on('productevent', function( data ){
+			  	console.log( "Browser received data", data);
+			    $('.events').prepend( "Browser received data: " + data.timestamp + "<br/>");
+			  });
+			});
+		</script>
+	</body>
+</html>
